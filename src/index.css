@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 10%;
+
+    --primary: 220 72% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 220 30% 20%;
+
+    --muted: 220 14% 95%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 220 14% 92%;
+    --accent-foreground: 220 30% 15%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 152 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --churn: 0 72% 55%;
+    --churn-foreground: 0 0% 100%;
+
+    --retain: 152 60% 42%;
+    --retain-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 72% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 30% 10%;
+    --sidebar-foreground: 220 10% 85%;
+    --sidebar-primary: 220 72% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 16%;
+    --sidebar-accent-foreground: 220 10% 90%;
+    --sidebar-border: 220 25% 18%;
+    --sidebar-ring: 220 72% 55%;
+    --sidebar-muted: 220 15% 40%;
+
+    --chart-blue: 220 72% 50%;
+    --chart-green: 152 60% 42%;
+    --chart-red: 0 72% 55%;
+    --chart-orange: 38 92% 50%;
+    --chart-purple: 270 60% 55%;
+  }
+
+  .dark {
+    --background: 220 30% 6%;
+    --foreground: 220 10% 92%;
+    --card: 220 25% 10%;
+    --card-foreground: 220 10% 92%;
+    --popover: 220 25% 10%;
+    --popover-foreground: 220 10% 92%;
+    --primary: 220 72% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 20% 16%;
+    --secondary-foreground: 220 10% 85%;
+    --muted: 220 20% 14%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 220 20% 16%;
+    --accent-foreground: 220 10% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 220 72% 55%;
+    --sidebar-background: 220 30% 6%;
+    --sidebar-foreground: 220 10% 80%;
+    --sidebar-primary: 220 72% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 12%;
+    --sidebar-accent-foreground: 220 10% 90%;
+    --sidebar-border: 220 20% 14%;
+    --sidebar-ring: 220 72% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
